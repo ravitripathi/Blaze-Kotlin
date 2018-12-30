@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BlazeKotlin</string>
+    <string name="app_icon_text">App Icon</string>
 </resources>
