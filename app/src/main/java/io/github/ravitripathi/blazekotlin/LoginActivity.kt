@@ -77,7 +77,7 @@ class LoginActivity : AppCompatActivity() {
     private fun FirebaseSignIn(credential: AuthCredential) {
         mAuth.signInWithCredential(credential).addOnCompleteListener { task: Task<AuthResult> ->
             if (task.isSuccessful) {
-                val i = Intent(this@LoginActivity, MainActivity::class.java)
+                val i = Intent(this@LoginActivity, MainBottomNavActivity::class.java)
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                 startActivity(i)
             } else {
